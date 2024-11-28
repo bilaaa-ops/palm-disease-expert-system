@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Pakar Penanggulangan Hama Kelapa Sawit</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+        }
+        header h1 {
+            margin: 0;
+        }
+        #search-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 0;
+            background-color: #f4f4f4;
+        }
+        #search-section input[type="text"] {
+            width: 80%;
+            max-width: 600px;
+            padding: 15px;
+            font-size: 1.5rem;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        #search-section button {
+            padding: 10px 30px;
+            font-size: 1.2rem;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        #search-section button:hover {
+            background-color: #45a049;
+        }
+        #solution {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            color: #333;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+        }
+        nav ul li a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sistem Pakar Penanggulangan Hama Kelapa Sawit</h1>
+    </header>
+    
+    <section id="search-section">
+        <input type="text" id="pest-name" placeholder="Masukkan Nama Hama...">
+        <button onclick="getSolution()">Cari Solusi</button>
+        <div id="solution"></div>
+    </section>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#tutors">Tutors</a></li>
+            <li><a href="#partners">Partners</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Placeholder untuk konten lainnya -->
+    <section id="home">
+        <h2>Welcome to Our System</h2>
+        <p>Explore how technology helps in palm oil pest management.</p>
+    </section>
+
+    <foote
